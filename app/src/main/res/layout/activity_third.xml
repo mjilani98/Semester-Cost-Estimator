@@ -68,6 +68,29 @@
         android:text="Next"
         android:onClick="next"/>
 
+    <TextView
+        android:id="@+id/underGraduateRate"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/lblAcademicStatus"
+        android:text="UnderGraduate : $300/credit"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/graduateRate"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/underGraduateRate"
+        android:text="Graduate : $400/credit"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+
 
 
 </RelativeLayout>
