@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundStyle"
+    tools:context=".SecondActivity"
+    >
+
+    <TextView
+        android:id="@+id/txtNumberOfCredit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Number Of Credits"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        />
+
+
+    <EditText
+        android:id="@+id/inputNumberOfCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtNumberOfCredit"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:hint="0"
+        />
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/btnStyle"
+        android:layout_below="@id/inputNumberOfCredits"
+        android:text="Next"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="300dp"
+        android:onClick="next"
+        />
+
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/btnStyle"
+        android:layout_below="@id/inputNumberOfCredits"
+        android:text="Back"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"
+        android:onClick="back"
+        />
+
+
+</RelativeLayout>
