@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundStyle"
+    tools:context=".FifthActivity">
+
+    <TextView
+        android:id="@+id/lblSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        />
+<!--Number of credits-->
+    <TextView
+        style="@style/labelStyle"
+        android:id="@+id/txtNumberOfCredit"
+        android:text="Number of credits :"
+        android:layout_below="@id/lblSummary"
+        />
+
+    <TextView
+        style="@style/labelStyle"
+        android:id="@+id/outputNumberOfCredits"
+        android:layout_below="@id/lblSummary"
+        android:layout_toRightOf="@id/txtNumberOfCredit"
+        />
+
+<!--    Academic status-->
+    <TextView
+        style="@style/labelStyle"
+        android:id="@+id/txtAcademicStatus"
+        android:layout_below="@id/txtNumberOfCredit"
+        android:text="Academic status :"
+        />
+
+    <TextView
+        style="@style/labelStyle"
+        android:id="@+id/outputAcademicStatus"
+        android:layout_below="@id/txtNumberOfCredit"
+        android:layout_toRightOf="@id/txtAcademicStatus"
+        />
+
+<!--Dorm-->
+    <TextView
+        style="@style/labelStyle"
+        android:id="@+id/txtDorm"
+        android:layout_below="@id/txtAcademicStatus"
+        android:text="Dormitory :"
+        />
+
+    <TextView
+        style="@style/labelStyle"
+        android:id="@+id/outputDorm"
+        android:layout_below="@id/txtAcademicStatus"
+        android:layout_toRightOf="@id/txtDorm"
+        />
+
+<!--Dining-->
+    <TextView
+        android:id="@+id/txtDining"
+        style="@style/labelStyle"
+        android:layout_below="@id/txtDorm"
+        android:text="Dinging :"
+        />
+
+    <TextView
+        android:id="@+id/outputDining"
+        style="@style/labelStyle"
+        android:layout_below="@id/txtDorm"
+        android:layout_toRightOf="@id/txtDining"
+        />
+
+<!--Total Cost-->
+    <TextView
+        android:id="@+id/txtTotalCost"
+        style="@style/labelStyle"
+        android:layout_below="@id/txtDining"
+        android:text="Total Cost : "
+        />
+
+<TextView
+    android:id="@+id/outputTotalCost"
+    style="@style/labelStyle"
+    android:layout_below="@id/txtDining"
+    android:layout_toRightOf="@id/txtTotalCost"
+    />
+
+<!--Back Button-->
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/btnStyle"
+        android:layout_below="@id/txtTotalCost"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:text="Back"
+        android:onClick="back"
+        />
+
+
+
+</RelativeLayout>

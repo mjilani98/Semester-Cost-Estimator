@@ -32,6 +32,9 @@
 <!--ForthActivity-->
         <activity android:name=".FourthActivity"></activity>
 
+<!-- FifthActivity-->
+        <activity android:name=".FifthActivity"></activity>
+
     </application>
 
 </manifest>
