@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HW3Q2"
         tools:targetApi="31">
+<!--MainActivity-->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -22,7 +23,11 @@
             </intent-filter>
         </activity>
 
+<!--SecondActivity-->
         <activity android:name=".SecondActivity"></activity>
+
+<!--ThirdActivity-->
+        <activity android:name=".ThirdActivity"></activity>
 
     </application>
 

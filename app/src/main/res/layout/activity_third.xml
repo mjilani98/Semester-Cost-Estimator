@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   style="@style/backgroundStyle"
+    tools:context=".ThirdActivity">
+
+<TextView
+    android:id="@+id/lblAcademicStatus"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="70dp"
+    android:text="Academic Status"
+    android:textSize="35dp"
+    android:textColor="@color/black"
+    />
+
+<!--Academic status radio group-->
+    <RadioGroup
+        android:id="@+id/academicStatusRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblAcademicStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioBtnUnderGraduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblAcademicStatus"
+            android:layout_centerHorizontal="true"
+            android:text="Undergraduate"
+            android:textSize="20dp"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/radioBtnGraduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioBtnUnderGraduate"
+            android:layout_centerHorizontal="true"
+            android:text="Graduate"
+            android:textSize="20dp"
+            />
+
+    </RadioGroup>
+
+
+<!--    Back button-->
+    <Button
+        style="@style/btnStyle"
+        android:layout_below="@id/academicStatusRadioGroup"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"
+        android:text="Back"
+        android:onClick="back"/>
+
+<!--    Next Button-->
+    <Button
+        style="@style/btnStyle"
+        android:layout_below="@id/academicStatusRadioGroup"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="250dp"
+        android:text="Next"
+        android:onClick="next"/>
+
+
+
+</RelativeLayout>
