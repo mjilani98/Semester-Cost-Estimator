@@ -29,6 +29,9 @@
 <!--ThirdActivity-->
         <activity android:name=".ThirdActivity"></activity>
 
+<!--ForthActivity-->
+        <activity android:name=".FourthActivity"></activity>
+
     </application>
 
 </manifest>
