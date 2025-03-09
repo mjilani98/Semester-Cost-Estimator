@@ -62,11 +62,21 @@ public class ThirdActivity extends AppCompatActivity
 
         //displaying fourth screen
         Intent fourthScreen = new Intent(this ,FourthActivity.class);
+        startActivity(fourthScreen);
     }
 
     //event handler to end the current screen
     public void back(View v)
     {
+        //sending the value to the model
+        
+        //get the academic status
+        RadioGroup academicStat = findViewById(R.id.academicStatusRadioGroup);
+        int acStatus = academicStat.getCheckedRadioButtonId();
+
+        //sending the value to the model
+        tuitionCalculator.setAcademicStatus(acStatus);
+
         finish();
     }
 }
