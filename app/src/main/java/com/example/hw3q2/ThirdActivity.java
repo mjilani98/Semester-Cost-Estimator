@@ -69,7 +69,7 @@ public class ThirdActivity extends AppCompatActivity
     public void back(View v)
     {
         //sending the value to the model
-        
+
         //get the academic status
         RadioGroup academicStat = findViewById(R.id.academicStatusRadioGroup);
         int acStatus = academicStat.getCheckedRadioButtonId();

@@ -59,6 +59,24 @@ public class SecondActivity extends AppCompatActivity
     //event handler that will end the current screen
     public void back(View v)
     {
+        //sending the values to the model
+        //access the edit text and retrieve the number entered
+        EditText edtNumberOfcredit = findViewById(R.id.inputNumberOfCredits);
+        String strNumberOfCredits = edtNumberOfcredit.getText().toString();
+        int numberOfCredit;
+        try
+        {
+            numberOfCredit = Integer.parseInt(strNumberOfCredits);
+        }
+        catch (NumberFormatException e)
+        {
+            numberOfCredit = 0 ;
+        }
+
+        //setting the number of credits to the model
+        tuitionCalculator.setNumberOfCredit(numberOfCredit);
+
+
         finish();
     }
 
