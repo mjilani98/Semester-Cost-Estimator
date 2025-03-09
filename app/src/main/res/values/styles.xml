@@ -15,7 +15,7 @@
         <item name="android:backgroundTint">@color/dark_blue</item>
     </style>
 
-    <style name="abelStyle">
+    <style name="labelStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">60dp</item>
